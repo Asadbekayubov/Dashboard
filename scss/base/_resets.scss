@@ -41,9 +41,18 @@ body {
 
 .container {
     width: 100%;
-    max-width: 1200px; // *
+    max-width: 1440px; // *
     margin-left: auto;
     margin-right: auto;
-    padding-left: 5rem; // *
-    padding-right: 5rem;// *
+}
+
+.bg{
+    background-color: #EEF2F5;
+}
+
+.side-bar-active{
+    background-color: #3E4049;
+}
+.mb{
+    margin-bottom: 6.4rem;
 }

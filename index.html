@@ -3,20 +3,199 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Name</title>
+    <title>Overview</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <!-- HEADER START -->
-    <header class="header"></header>
+    <header class="header">
+        <div class="header__container container">
+            <div class="header__sidebar">
+                <nav class="sitenav">
+                    <a href="#" class="header__logo">
+                        <img class="header__logo__img" src="images/svg/sidebar-logo.svg" alt="Header logo image" width="35" height="39">
+                        Dashboard
+                    </a>
+                    <ul class="sitenav__list">
+                        <li class="sitenav__item side-bar-active">
+                            <a href="index.html" class="sitenav__link">
+                                <img src="./images/svg/sidebar-icon-1.svg" alt="sitenav link image" class="sitenav__link__img">
+                                Overview
+                            </a>
+                        </li>
+                        <li class="sitenav__item">
+                            <a href="tickets.html" class="sitenav__link">
+                                <img src="./images/svg/sidebar-icon-2.svg" alt="sitenav link image" class="sitenav__link__img">
+                                Tickets    
+                            </a>
+                        </li>
+                        <li class="sitenav__item">
+                            <a href="#" class="sitenav__link">
+                                <img src="./images/svg/sidebar-icon-3.svg" alt="sitenav link image" class="sitenav__link__img">
+                                Ideas
+                            </a>
+                        </li>
+                        <li class="sitenav__item">
+                            <a href="#" class="sitenav__link">
+                                <img src="./images/svg/sidebar-icon-4.svg" alt="sitenav link image" class="sitenav__link__img">
+                                Contacts
+                            </a>
+                        </li>
+                        <li class="sitenav__item">
+                            <a href="#" class="sitenav__link">
+                                <img src="./images/svg/sidebar-icon-5.svg" alt="sitenav link image" class="sitenav__link__img">
+                                Agents
+                            </a>
+                        </li>
+                        <li class="sitenav__item">
+                            <a href="#" class="sitenav__link">
+                                <img src="./images/svg/sidebar-icon-6.svg" alt="sitenav link image" class="sitenav__link__img">
+                                Articles
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <hr class="header__divider">
+                <div class="header__btns">
+                    <a class="header__btns__link" href="#">
+                        <img class="header__btns__link_img" src="./images/svg/header-btn-icon-1.svg" alt="header btns link images">
+                        Change mode
+                    </a>
+                    <a class="header__btns__link" href="#">
+                        <img class="header__btns__link_img" src="./images/svg/header-btn-icon-2.svg" alt="header btns link images">
+                        Logout
+                    </a>
+                </div>
+            </div>
+            <div class="header__content">
+                <div class="header__content__top">
+                    <a href="#" class="header__content__top__btn">
+                        <img src="images/svg/header-content-top-btn-img.svg" alt="" class="header__content__top__btn__img">
+                    </a>
+                    <div class="header__content__top__profile">
+                        <p class="header__content__top__profile__name">Jones Ferdinand</p>
+                        <img src="images/svg/profile.svg" alt="profile img" width="44" height="44">
+                    </div>
+                </div>
+                <div class="header__content__overview mb">
+                    <h1 class="header__content__overview__title">Overview</h1>
+                    <a class="overview__btn__dot" href="#">
+                        <img src="images/svg/btn-dot-img.svg" alt="dot image" class="overview__btn__dot__img">
+                    </a>
+                    <a class="overview__btn__add" href="#">Add</a>
+                </div>
+                <div class="table">
+                    <div class="table__top">
+                        <p class="table__top__owner">Owner</p>
+                        <p class="table__top__end_date">End date</p>
+                        <p class="table__top__profits">Profits</p>
+                        <p class="table__top__losses">Losses</p>
+                        <p class="table__top__phones">Phone</p>
+                    </div>
+                    <div class="table__item bg">
+                        <p class="table__item__name">
+                            <img src="images/svg/table-item-img-1.svg" alt="" class="table__item__name__img" width="36" height="34">
+                            Savannah Nguyen
+                        </p>
+                        <p class="table__item__date">1/15/12</p>
+                        <p class="table__item__profit">$328.85</p>
+                        <p class="table__item__loss">$779.58</p>
+                        <p class="table__item__number">(603) 555-0123</p>
+                    </div>
+                    <div class="table__item">
+                        <p class="table__item__name">
+                            <img src="images/svg/table-item-img-2.svg" alt="" class="table__item__name__img" width="36" height="34">
+                            Savannah Nguyen
+                        </p>
+                        <p class="table__item__date">8/30/14</p>
+                        <p class="table__item__profit">$948.55</p>
+                        <p class="table__item__loss">$589.99</p>
+                        <p class="table__item__number">(629) 555-0129</p>
+                    </div>
+                    <div class="table__item bg">
+                        <p class="table__item__name">
+                            <img src="images/svg/table-item-img-3.svg" alt="" class="table__item__name__img" width="36" height="34">
+                            Savannah Nguyen
+                        </p>
+                        <p class="table__item__date">5/30/14</p>
+                        <p class="table__item__profit">$778.35</p>
+                        <p class="table__item__loss">$948.55</p>
+                        <p class="table__item__number">(308) 555-0121</p>
+                    </div>
+                    <div class="table__item">
+                        <p class="table__item__name">
+                            <img src="images/svg/table-item-img-4.svg" alt="" class="table__item__name__img" width="36" height="34">
+                            Savannah Nguyen
+                        </p>
+                        <p class="table__item__date">11/7/16</p>
+                        <p class="table__item__profit">$169.43</p>
+                        <p class="table__item__loss">$202.87</p>
+                        <p class="table__item__number">(302) 555-0107</p>
+                    </div>
+                    <div class="table__item bg">
+                        <p class="table__item__name">
+                            <img src="images/svg/table-item-img-5.svg" alt="" class="table__item__name__img" width="36" height="34">
+                            Savannah Nguyen
+                        </p>
+                        <p class="table__item__date">7/27/13</p>
+                        <p class="table__item__profit">$782.01</p>
+                        <p class="table__item__loss">$710.68</p>
+                        <p class="table__item__number">(303) 555-0105</p>
+                    </div>
+                    <div class="table__item">
+                        <p class="table__item__name">
+                            <img src="images/svg/table-item-img-6.svg" alt="" class="table__item__name__img" width="36" height="34">
+                            Savannah Nguyen
+                        </p>
+                        <p class="table__item__date">5/19/12</p>
+                        <p class="table__item__profit">$767.50</p>
+                        <p class="table__item__loss">$779.58</p>
+                        <p class="table__item__number">(225) 555-0118</p>
+                    </div>
+                    <div class="table__item bg">
+                        <p class="table__item__name">
+                            <img src="images/svg/table-item-img-7.svg" alt="" class="table__item__name__img" width="36" height="34">
+                            Savannah Nguyen
+                        </p>
+                        <p class="table__item__date">8/21/15</p>
+                        <p class="table__item__profit">$475.22</p>
+                        <p class="table__item__loss">$219.78</p>
+                        <p class="table__item__number">(205) 555-0100</p>
+                    </div>
+                    <div class="table__item">
+                        <p class="table__item__name">
+                            <img src="images/svg/table-item-img-5.svg" alt="" class="table__item__name__img" width="36" height="34">
+                            Savannah Nguyen
+                        </p>
+                        <p class="table__item__date">7/27/13</p>
+                        <p class="table__item__profit">$782.01</p>
+                        <p class="table__item__loss">$710.68</p>
+                        <p class="table__item__number">(303) 555-0105</p>
+                    </div>
+                    <div class="table__item bg">
+                        <p class="table__item__name">
+                            <img src="images/svg/table-item-img-7.svg" alt="" class="table__item__name__img" width="36" height="34">
+                            Savannah Nguyen
+                        </p>
+                        <p class="table__item__date">7/27/13</p>
+                        <p class="table__item__profit">$782.01</p>
+                        <p class="table__item__loss">$710.68</p>
+                        <p class="table__item__number">(303) 555-0105</p>
+                    </div>
+                    <div class="table__item">
+                        <p class="table__item__name">
+                            <img src="images/svg/table-item-img-5.svg" alt="" class="table__item__name__img" width="36" height="34">
+                            Savannah Nguyen
+                        </p>
+                        <p class="table__item__date">7/27/13</p>
+                        <p class="table__item__profit">$782.01</p>
+                        <p class="table__item__loss">$710.68</p>
+                        <p class="table__item__number">(303) 555-0105</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
     <!-- HEADER END -->
-    
-    <!-- MAIN START-->
-    <main class="main"></main>
-    <!-- MAIN END-->
-
-    <!-- FOOTER START -->
-    <footer class="footer"></footer>
-    <!-- FOOTER END -->
 </body>
 </html>

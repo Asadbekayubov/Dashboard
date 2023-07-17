@@ -1,0 +1,231 @@
+.header {
+    width: 100%;
+}
+.header__container {
+    // height: 100vh;
+    display: flex;
+    .header__sidebar {
+        width: 255px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: $sidebar-bg;
+        padding: 3.6rem 2rem;
+        .sitenav{
+            .header__logo{
+                display: flex;
+                align-items: center;
+                gap: 1.8rem;
+                font-family: 'Mulish' , sans-serif;
+                font-weight: 700;
+                color: #A4A6B3;
+                font-size: 1.9rem;
+                margin-bottom: 5.3rem;
+            }
+            .sitenav__list{
+                .sitenav__item{
+                    .sitenav__link{
+                        width: 100%;
+                        height: 56px;
+                        display: flex;
+                        align-items: center;
+                        gap: 2.4rem;
+                        font-size: $sidebar-link-fs;
+                        font-weight: $sidebar-link-fw;
+                        font-family: 'Mulish';
+                        color: $sidebar-link-color;
+                    }
+                }
+            }
+        }
+        .header__divider{
+            width: 100%;
+            height: 1px;
+            border:0;
+            background-color: #DFE0EB;
+            opacity: 0.06;
+            margin-top: 1.6rem;
+            margin-bottom: 52rem;
+        }
+        .header__btns{
+            display: flex;
+            gap: 2.4rem;
+            flex-direction: column;
+            .header__btns__link{
+                display: flex;
+                align-items: center;
+                gap: 1.8rem;
+                font-size: 1.6rem;
+                font-family: 'Lato';
+                font-weight: 700;
+                color: #A4A6B3;
+            }
+        }
+    }
+    .header__content{
+        width: 1185px;
+        height: 1110px;
+        padding-top: 3.1rem;
+        padding-left: 2.9rem;
+        padding-right: 3.6rem;
+        .header__content__top{
+            width: 100%;
+            height: 44px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 5.3rem;
+            .header__content__top__profile{
+                display: flex;
+                align-items: center;
+                gap: 1.4rem;
+                .header__content__top__profile__name{
+                    font-family: 'Mulish';
+                    font-weight: 600;
+                    font-size: 1.4rem;
+                    line-height: 1.4;
+                }
+            }
+        }
+    }
+}
+
+
+.header__content__overview {
+    display: flex;
+    align-items: center;
+    .header__content__overview__title{
+        font-size: 3.9rem;
+        font-family: 'Lato' , sans-serif;
+        font-weight: 400;
+        line-height: 1.2;
+        color: #000000;
+        margin-right: auto;
+    }
+    .overview__btn__dot {
+        width: 71px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #EEF2F5;
+        border-radius: 0.5rem;
+    }
+    .overview__btn__add{
+        width: 71px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #10CD45;
+        border-radius: 0.5rem;
+        font-family: "Lato";
+        font-size: 1.4rem;
+        color: #FFFFFF;
+        margin-left: 3.2rem;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+}
+
+.table{
+    .table__top{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 2rem;
+        margin-bottom: 2rem;
+        .table__top__owner{
+            font-family: 'Lato' , sans-serif;
+            font-weight: 500;
+            font-size: 1.6rem;
+            line-height: 1.18;
+            color: #878787;
+            margin-right: 23.9rem;
+        }
+        .table__top__end_date{
+            font-family: 'Lato' , sans-serif;
+            font-weight: 500;
+            font-size: 1.6rem;
+            line-height: 1.18;
+            color: #878787;
+            margin-right: 15.8rem;
+        }
+        .table__top__profits{
+            font-family: 'Lato' , sans-serif;
+            font-weight: 500;
+            font-size: 1.6rem;
+            line-height: 1.18;
+            color: #878787;
+            margin-right: 15.6rem;
+        }
+        .table__top__losses{
+            font-family: 'Lato' , sans-serif;
+            font-weight: 500;
+            font-size: 1.6rem;
+            line-height: 1.18;
+            color: #878787;
+            margin-right: 13.5rem;
+        }
+        .table__top__phones{
+            font-family: 'Lato' , sans-serif;
+            font-weight: 500;
+            font-size: 1.6rem;
+            line-height: 1.18;
+            color: #878787;
+        }
+    }
+    .table__item{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        height: 66px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        .table__item__name{
+            display: flex;
+            align-items: center;
+            gap: 2.4rem;
+            font-family: 'Lato' , sans-serif;
+            font-size: 1.4rem;
+            font-weight: 500;
+            line-height: 1.1;
+            color: #414141;
+            margin-right: 11.1rem;
+        }
+        .table__item__date{
+            font-family: 'Lato' , sans-serif;
+            font-size: 1.4rem;
+            font-weight: 500;
+            line-height: 1.1;
+            color: #414141;
+            margin-right: 16.5rem;
+        }
+        .table__item__profit{
+            font-family: 'Lato' , sans-serif;
+            font-size: 1.4rem;
+            font-weight: 500;
+            line-height: 1.1;
+            color: #00CA39;
+            margin-right: 15.2rem;
+        }
+        .table__item__loss{
+            font-family: 'Lato' , sans-serif;
+            font-size: 1.4rem;
+            font-weight: 500;
+            line-height: 1.1;
+            color: #E44067;
+            margin-right: 14rem;
+        }
+        .table__item__number{
+            font-family: 'Lato' , sans-serif;
+            font-size: 1.4rem;
+            font-weight: 500;
+            line-height: 1.1;
+            color: #414141;
+        }
+    }
+}
+
+
+

@@ -306,4 +306,323 @@ template {
  */
 [hidden] {
   display: none;
+}
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  height: 100%;
+}
+
+img {
+  display: flex;
+  -o-object-fit: cover;
+     object-fit: cover; /* contain */
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bg {
+  background-color: #EEF2F5;
+}
+
+.side-bar-active {
+  background-color: #3E4049;
+}
+
+.mb {
+  margin-bottom: 6.4rem;
+}
+
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/mulish-v12-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* mulish-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/mulish-v12-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* mulish-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/mulish-v12-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* lato-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/lato-v24-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* lato-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/lato-v24-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+.header {
+  width: 100%;
+}
+
+.header__container {
+  display: flex;
+}
+.header__container .header__sidebar {
+  width: 255px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #363740;
+  padding: 3.6rem 2rem;
+}
+.header__container .header__sidebar .sitenav .header__logo {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  color: #A4A6B3;
+  font-size: 1.9rem;
+  margin-bottom: 5.3rem;
+}
+.header__container .header__sidebar .sitenav .sitenav__list .sitenav__item .sitenav__link {
+  width: 100%;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: "Mulish";
+  color: #A4A6B3;
+}
+.header__container .header__sidebar .header__divider {
+  width: 100%;
+  height: 1px;
+  border: 0;
+  background-color: #DFE0EB;
+  opacity: 0.06;
+  margin-top: 1.6rem;
+  margin-bottom: 52rem;
+}
+.header__container .header__sidebar .header__btns {
+  display: flex;
+  gap: 2.4rem;
+  flex-direction: column;
+}
+.header__container .header__sidebar .header__btns .header__btns__link {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+  font-size: 1.6rem;
+  font-family: "Lato";
+  font-weight: 700;
+  color: #A4A6B3;
+}
+.header__container .header__content {
+  width: 1185px;
+  height: 1110px;
+  padding-top: 3.1rem;
+  padding-left: 2.9rem;
+  padding-right: 3.6rem;
+}
+.header__container .header__content .header__content__top {
+  width: 100%;
+  height: 44px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5.3rem;
+}
+.header__container .header__content .header__content__top .header__content__top__profile {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+.header__container .header__content .header__content__top .header__content__top__profile .header__content__top__profile__name {
+  font-family: "Mulish";
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1.4;
+}
+
+.header__content__overview {
+  display: flex;
+  align-items: center;
+}
+.header__content__overview .header__content__overview__title {
+  font-size: 3.9rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #000000;
+  margin-right: auto;
+}
+.header__content__overview .overview__btn__dot {
+  width: 71px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #EEF2F5;
+  border-radius: 0.5rem;
+}
+.header__content__overview .overview__btn__add {
+  width: 71px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #10CD45;
+  border-radius: 0.5rem;
+  font-family: "Lato";
+  font-size: 1.4rem;
+  color: #FFFFFF;
+  margin-left: 3.2rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.table .table__top {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 2rem;
+  margin-bottom: 2rem;
+}
+.table .table__top .table__top__owner {
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.18;
+  color: #878787;
+  margin-right: 23.9rem;
+}
+.table .table__top .table__top__end_date {
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.18;
+  color: #878787;
+  margin-right: 15.8rem;
+}
+.table .table__top .table__top__profits {
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.18;
+  color: #878787;
+  margin-right: 15.6rem;
+}
+.table .table__top .table__top__losses {
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.18;
+  color: #878787;
+  margin-right: 13.5rem;
+}
+.table .table__top .table__top__phones {
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.18;
+  color: #878787;
+}
+.table .table__item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 66px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.table .table__item .table__item__name {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  font-family: "Lato", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.1;
+  color: #414141;
+  margin-right: 11.1rem;
+}
+.table .table__item .table__item__date {
+  font-family: "Lato", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.1;
+  color: #414141;
+  margin-right: 16.5rem;
+}
+.table .table__item .table__item__profit {
+  font-family: "Lato", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.1;
+  color: #00CA39;
+  margin-right: 15.2rem;
+}
+.table .table__item .table__item__loss {
+  font-family: "Lato", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.1;
+  color: #E44067;
+  margin-right: 14rem;
+}
+.table .table__item .table__item__number {
+  font-family: "Lato", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.1;
+  color: #414141;
+}
+
+main {
+  flex-grow: 1;
 }/*# sourceMappingURL=style.css.map */
